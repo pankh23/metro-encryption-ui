@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+// import JourneyForm from './components/JourneyForm';
+import SearchMetro from './components/SearchMetro';
+// import MetroStationsMap from './components/MetroStationsMap';
+import MetroMap from './components/MetroMap';
+import StationList from './components/StationList';
+import Info from './components/Info';
+import './components/styles.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      
+      <MetroMap />
+      
+      <div className='search-info'>
+
+      <SearchMetro />
+      <Info />
+      </div>
+      
+      <StationList />
+      
     </div>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  button {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+
+
+  .search-info {
+    display: flex; /* Align child elements horizontally */
+    gap: 20px; /* Add space between Search and Info */
+    justify-content: space-between; /* Distribute space evenly */
+    align-items: flex-start; /* Align elements at the start */
+
+    /* padding-left: 20px; */
+    padding-right: 100px;
+    padding-left: 70px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  #search-metro {
+    flex: 1; /* Allow SearchMetro to take equal space */
+
+    padding-top: 30px;
+    padding-left: 100px;
+  }
+  
+  .info-div {
+    flex: 1; /* Allow Info to take equal space */
+    /* padding-right: 20px; */
+  }
+  
+  /* Optional: Adjust responsiveness */
+  @media (max-width: 768px) {
+    .search-and-info {
+      flex-direction: column; /* Stack Search and Info vertically on smaller screens */
+      gap: 10px;
+    }
+  }
+  
+  
